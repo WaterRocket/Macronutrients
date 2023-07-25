@@ -1,0 +1,54 @@
+<html>
+    <header>
+        <h2>Macronutrients Calculator</h2>
+        <h2>Jason Wicks</h2>
+    </header>
+    <body>
+        <nav>
+            <h1>Wiz</h1>
+            <h3>Macronutrients Calculator</h3>
+            <h3>BMI Calculator</h3>
+        </nav>
+        <div class="variables">
+            <h1>Calculate your recommended macronutrients</h1>
+            <p>What is your gender?</p>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" value="male">
+            <label for="female">Female</label>
+            <input id="female" name="gender" type="radio" value="female">
+            <label for="other">Other</label>
+            <input id="other" name="gender" type="radio" value="other">
+            <p>What are your goals?</p>
+            <label for="lose">Lose</label>
+            <input id="lose" name="goal" type="radio" value="'lose">
+            <label for="maintain">Maintain</label>
+            <input id="maintain" name="goal" type="radio" value="maintain">
+            <label for="gain">Gain</label>
+            <input id="gain" name="goal" type="radio" value="gain">
+            <p>I'm 20 years old</p>
+            <input id="age" name="age" type="range" min="16" max="100">
+            <p>I'm 178cm tall</p>
+            <input id="height" name="height" type="range" min="50cm" max="250cm">
+            <p>I currently weigh 94kg</p>
+            <input id="weight" name="weight" type="range" min="40" max="200">
+            <p>Describe your average activity level</p>
+            <label for="sedentary">Sedentary</label>
+            <input id="sedentary" name="activity" type="radio" value="sedentary">
+            <label for="moderate">Moderate</label>
+            <input id="moderate" name="activity" type="radio" value="moderate">
+            <label for="active">Active</label>
+            <input id="active" name="activity" type="radio" value="active"> 
+            <h3>Calculate Macronutrients</h3>
+        </div>
+        <div class="results">
+            <h1>Your macronutrients results:</h1>
+            <h2>EXAMPLE calories</h2>
+            <h3 id="protein">100g</h3>
+            <p>Protein</p>
+            <h3 id="carbs">100g</h3>
+            <p>Carbs</p>
+            <h3 id="fat">100g</h3>
+            <p>Fat</p>
+        </div>
+    </body>
+</html>
