@@ -2,16 +2,20 @@
     <head>
         <title>Macros</title>
         <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
-            <h2>Macronutrients Calculator</h2>
-            <h2>Jason Wicks</h2>
+            <h2 id="heading">Macronutrients Calculator</h2>
+            <h2 class="name">Jason Wicks</h2>
         </header>
         <nav>
             <h1>Wiz</h1>
-            <h3>Macronutrients Calculator</h3>
-            <h3>BMI Calculator</h3>
+            <h4 id="calc">Macronutrients Calculator</h4>
+            <h4 id="calcs">BMI Calculator</h4>
         </nav>
         <div class="variables">
             <h1>Calculate your recommended macronutrients</h1>
@@ -20,39 +24,44 @@
             <input name="gender" id="male" type="radio" value="male">
             <label for="female">Female</label>
             <input id="female" name="gender" type="radio" value="female">
-            <label for="other">Other</label>
-            <input id="other" name="gender" type="radio" value="other">
             <p>What are your goals?</p>
             <label for="lose">Lose</label>
-            <input id="lose" name="goal" type="radio" value="'lose">
+            <input id="lose" name="goal" type="radio" value='lose'>
             <label for="maintain">Maintain</label>
             <input id="maintain" name="goal" type="radio" value="maintain">
             <label for="gain">Gain</label>
             <input id="gain" name="goal" type="radio" value="gain">
-            <p>I'm 20 years old</p>
-            <input id="age" name="age" type="range" min="16" max="100">
-            <p>I'm 178cm tall</p>
-            <input id="height" name="height" type="range" min="50cm" max="250cm">
-            <p>I currently weigh 94kg</p>
-            <input id="weight" name="weight" type="range" min="40" max="200">
+            <p id="ageDesc">I'm 20 years old</p>
+            <input id="ages" name="age" type="range" min='18' max='80' value="20">
+            <p id="heightDesc">I'm 178cm tall</p>
+            <input id="height" name="height" type="range" min="50" max="250" value="178">
+            <p id="weightDesc">I currently weigh 94kg</p>
+            <input id="weight" name="weight" type="range" min="40" max="200" value="95">
             <p>Describe your average activity level</p>
             <label for="sedentary">Sedentary</label>
             <input id="sedentary" name="activity" type="radio" value="sedentary">
             <label for="moderate">Moderate</label>
             <input id="moderate" name="activity" type="radio" value="moderate">
             <label for="active">Active</label>
-            <input id="active" name="activity" type="radio" value="active"> 
-            <h3>Calculate Macronutrients</h3>
+            <input id="active" name="activity" type="radio" value="active" required> 
+            <h3 id="calcButton">Calculate Macronutrients</h3>
         </div>
         <div class="results">
             <h1>Your macronutrients results:</h1>
-            <h2>EXAMPLE calories</h2>
-            <h3 id="protein">100g</h3>
-            <p>Protein</p>
-            <h3 id="carbs">100g</h3>
-            <p>Carbs</p>
-            <h3 id="fat">100g</h3>
-            <p>Fat</p>
+            <h2 id="calorieResults">EXAMPLE calories</h2>
+            <div class="proteins">
+                <h3 id="proteinResult">100g</h3>
+                <p>Protein</p>
+            </div>
+            <div class="carbs">
+                <h3 id="carbResult">100g</h3>
+                <p>Carbs</p>
+            </div>
+            <div class="fats">
+                <h3 id="fatResult">100g</h3>
+                <p>Fat</p>
+            </div>
         </div>
+        <script src="./script.js"></script>
     </body>
 </html>
