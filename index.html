@@ -21,12 +21,12 @@
             <h1>Calculate your recommended macronutrients</h1>
             <p>What is your gender?</p>
             <label for="male">Male</label>
-            <input name="gender" id="male" type="radio" value="male">
+            <input name="gender" id="male" type="radio" value="male" required>
             <label for="female">Female</label>
             <input id="female" name="gender" type="radio" value="female">
             <p>What are your goals?</p>
             <label for="lose">Lose</label>
-            <input id="lose" name="goal" type="radio" value='lose'>
+            <input id="lose" name="goal" type="radio" value='lose' required>
             <label for="maintain">Maintain</label>
             <input id="maintain" name="goal" type="radio" value="maintain">
             <label for="gain">Gain</label>
@@ -39,12 +39,14 @@
             <input id="weight" name="weight" type="range" min="40" max="200" value="95">
             <p>Describe your average activity level</p>
             <label for="sedentary">Sedentary</label>
-            <input id="sedentary" name="activity" type="radio" value="sedentary">
+            <input id="sedentary" name="activity" type="radio" value="sedentary" required>
             <label for="moderate">Moderate</label>
             <input id="moderate" name="activity" type="radio" value="moderate">
             <label for="active">Active</label>
-            <input id="active" name="activity" type="radio" value="active" required> 
-            <h3 id="calcButton">Calculate Macronutrients</h3>
+            <input id="active" name="activity" type="radio" value="active" required>
+            <div class="buttons">
+                <h3 id="calcButton">Calculate Macronutrients</h3>
+            </div> 
         </div>
         <div class="results">
             <h1>Your macronutrients results:</h1>
